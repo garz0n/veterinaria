@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Style steel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Veterinaria</title>
+</head>
+<head>
+</head>
+<body>
+	<div class="jumbotron" id="jumbotron">
+
+	</div>
+	<br><br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5" align="center">
+				<h2 align="center"></h2>
+				
+					<form align="center">
+						<label for="name">Ingresa tu nombre:</label>
+						<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+						<br>
+						<label for="age">Ingresa el nombre de tu mascota:</label>
+						<input type="text" name="edad" id="nmascota" class="form-control" placeholder="Nombre de la mascota">
+						<br>
+						<label for="height">Ingresa el tipo de consulta:</label>
+						<input type="text" name="altura" id="tConsulta" class="form-control" placeholder="Tipo de consulta">
+						<br>
+						<label for="position">Ingresa el tipo de animal:</label>
+						<input type="text" name="posicion" id="tipo" class="form-control" placeholder="Tipo de animal">
+						<br>
+						<label for="diagnostico">Ingresa un diagnostico principal:</label>
+						<input type="text" id="diagnostico" class="form-control" placeholder="Diagnostico principal">
+						<br>
+						<button type="button" id="botonAgregarConsulta" class="btn btn-primary" onclick="agregarConsulta()">Agregar</button>
+						<button type="button" id="btm-buscar" class="btn-success btn" onclick="buscarConsulta()">Buscar</button>
+						<button type="button" id="btn-eliminar" class="btn btn-info" onclick="eliminar()">Eliminar</button>
+					</form>
+					
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-5">
+					<img src="img/+kota.png" alt="...">
+				</div>
+			</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-sm table-border">
+						<thead>
+							<th>Nombre Dueño</th>
+							<th>Nombre Mascota</th>
+							<th>Tipo de consulta</th>
+							<th>Tipo de animal</th>
+							<th>Diagnostico</th>
+						</thead>
+						<tbody id="tabla1"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	<div class="jumbotron">
+		<h2>Mauricio Max Garzón Ruiz</h2>
+		<H2>Cruz Enrique García Ramos</H2>
+		<H2>CBTis #134</H2>
+		<H2>Chilpancingo de los Bravo, Guerrero</H2>
+	</div>
+<script src="main.js"></script>
+</body>
